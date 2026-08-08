@@ -1,0 +1,17 @@
+server/
+├── api/
+│   └── index.js               # Express app ko Vercel Serverless Function ki tarah export karega
+├── config/
+│   └── gemini.js              # Gemini Pro Client setup
+├── controllers/
+│   └── interviewController.js # POST /api/interview Request & Response Logic
+├── routes/
+│   └── interviewRoutes.js     # /api/interview Route
+├── services/
+│   ├── geminiService.js       # Gemini Pro Multi-turn Chat & JSON Feedback
+│   └── memoryService.js       # Breeth Pro API Memory Integration
+├── prompts/
+│   └── systemPrompt.js        # Interviewer System Instructions
+├── .env                       # GEMINI_API_KEY, BREETH_API_KEY, BREETH_API_URL
+├── package.json
+└── vercel.json
